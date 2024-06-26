@@ -26,3 +26,8 @@ try:
     from .pistonball_task_wrapper import PistonballTaskWrapper
 except ImportError  as e:
     warnings.warn(f"Unable to import the following pistonball dependencies: {e.name}")
+
+try:
+    from .crafter_task_wrapper import CrafterTaskWrapper
+except ImportError as e:
+    warnings.warn(f"Unable to import the following pistonball dependencies: {e.name}")
